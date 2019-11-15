@@ -1,5 +1,4 @@
 FROM golang:latest as builder
-#FROM golang:1.10.0 as builder
 WORKDIR /go/src/github.com/CommonSun/nsqd-discovery
 COPY . .
 RUN go get -u -v github.com/golang/dep/cmd/dep \
