@@ -3,5 +3,8 @@ all: build
 build:
 		./bin/build.sh
 
+docker:
+		docker build -t heymarket/nsqd-discovery .
+
 deploy:
-		docker push harlow/nsqd-discovery
+		docker push heymarket/nsqd-discovery
